@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia — Apprends, teste-toi, progresse</title>
+  <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#accueil" aria-label="Accueil">
+        <span class="logo" aria-hidden="true"><img src="image/logo-image.png" alt="logo-mayundo" srcset=""></span>
+        <h1>Academia</h1>
+      </a>
+      <!--hambuger-->
+      <nav class="navbar">
+        <img src="images/logo-MT.png" alt="">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+      </nav>
+
+      <div id="menu" class="menu">
+        <ul>
+          <li><a class="active" href="#accueil">Accueil</a></li>
+          <li><a href="#catalogue">Catalogue</a></li>
+          <li><a href="#cours">Cours</a></li>
+          <li><a href="#profil">Profil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Hero -->
+  <header id="accueil" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2>Apprends, teste‑toi, progresse ✨</h2>
+        <p>Des modules clairs, des quiz rapides, des PDF propres. Une plateforme pensée pour apprendre sans se perdre.</p>
+        <div class="cta">
+          <button class="btn btn-primary">Commencer un quiz</button>
+          <button class="btn btn-ghost">Parcourir les PDF</button>
+          <button class="btn btn-ghost">Lecture en ligne</button>
+          <button class="btn btn-ghost">Dialogue avec IA</button>
+        </div>
+      </div>
+      <aside class="hero-card" aria-labelledby="progression">
+        <header>
+          <div class="chip" id="progression">Ta progression</div>
+          <span class="tag">
+            <!-- trophy icon -->
+            <svg class="icon badge" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 4V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v1H4a1 1 0 0 0-1 1v2a5 5 0 0 0 5 5h.09A6 6 0 0 0 11 14.9V17H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3v-2.1A6 6 0 0 0 15.91 12H16a5 5 0 0 0 5-5V5a1 1 0 0 0-1-1h-4Zm-8 7A3 3 0 0 1 5 8V6h3v5Zm11-3a3 3 0 0 1-3 3V6h3v2Z"/></svg>
+            3 badges
+          </span>
+        </header>
+        <p style="margin:6px 0 10px; color:var(--muted)">Module en cours : « Bases du Réseau »</p>
+        <div class="progress" aria-label="Barre de progression"><span></span></div>
+        <p class="hint">62% terminé — continue, tu y es presque 💪</p>
+      </aside>
+    </div>
+  </header>
+
+  <!-- Catalogue -->
+  <section id="catalogue">
+    <div class="container">
+      <div class="section-title">
+        <h3>Catalogue des cours</h3>
+        <p>Choisis un module pour lire le PDF, dialogué avec IA, Lecture en ligne ou passer un quiz.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <header>
+            <!-- book icon -->
+            <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+            <h4>Réseaux — Bases</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iure dolore, natus reiciendis accusamus tempora quia beatae quibusdam expedita ut molestiae fugit unde qui. Ratione possimus commodi quod tempora esse.</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <header>
+            <!-- quiz icon -->
+            <svg class="icon quiz" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 1 1 5 5 1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.13A7 7 0 0 0 12 2Zm0 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+            <h4>Cybersécurité — Essentiels</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit odio incidunt est! Nulla, libero ipsam, architecto, et atque laboriosam natus modi doloremque inventore quaerat quasi. Cumque velit necessitatibus quam.</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <header>
+            <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+            <h4>Programmation Web — HTML/CSS</h4>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ut sunt magni illum accusamus, ipsum iure quaerat tempore laboriosam, consequuntur at corrupti voluptates nam? Consectetur praesentium magnam excepturi rem quis.</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <header>
+            <svg class="icon quiz" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 1 1 5 5 1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.13A7 7 0 0 0 12 2Zm0 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+            <h4>Excel — Analyses rapides</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus, provident quisquam iste, et ipsum doloremque, similique perspiciatis cumque quae fugiat repellat enim eligendi dolor ullam aliquam dolorem dignissimos ea.</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <header>
+            <!-- book icon -->
+            <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+            <h4>Word de A - Z</h4>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quisquam aliquam quasi. Optio voluptates nesciunt, sequi quia maxime sint possimus expedita facilis! Dicta molestiae, ipsum cum omnis tempore maiores voluptas!</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <header>
+            <!-- book icon -->
+            <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+            <h4>PowerPoint de A - Z</h4>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quisquam aliquam quasi. Optio voluptates nesciunt, sequi quia maxime sint possimus expedita facilis! Dicta molestiae, ipsum cum omnis tempore maiores voluptas!</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <header>
+            <!-- book icon -->
+            <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+            <h4>Correspondance Commerciale de A - Z</h4>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quisquam aliquam quasi. Optio voluptates nesciunt, sequi quia maxime sint possimus expedita facilis! Dicta molestiae, ipsum cum omnis tempore maiores voluptas!</p>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">Intermediaire</span>
+            <span class="tag">Senior</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cours (mock) -->
+  <section id="cours">
+    <div class="container">
+      <div class="section-title">
+        <h3>Page en cours de lecture : « Réseaux Informatique  P <span class="pages">11</span>/87 »</h3>
+        <p>Vous étiez entre de lire <strong>Le réseaux informatique dans le chapitre conception d'un réseau</strong></p>
+      </div>
+
+      <div class="course">
+        <div class="panel">
+          <h4>Ressources du module</h4>
+          <div class="resource-list">
+            <div class="resource">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <svg class="icon pdf" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h9a1 1 0 0 1 .8.4l3.5 4.7a1 1 0 0 1 .2.6V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm9 2v4h4"/></svg>
+                <strong>Support PDF</strong>
+              </div>
+              <a class="btn btn-ghost" href="livres/20 ans après (les 3 mousquetaires).pdf" target="_blank" aria-label="Télécharger le PDF">Télécharger</a>
+            </div>
+            <div class="resource">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <svg class="icon quiz" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 1 1 5 5 1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.13A7 7 0 0 0 12 2Zm0 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+                <strong>Quiz 25 questions</strong>
+              </div>
+              <a class="btn btn-primary" href="#quiz" aria-label="Commencer le quiz">Commencer</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h4>Progression</h4>
+          <div class="meta">
+            <span class="tag">Débutant</span>
+            <span class="tag">~ 45 min</span>
+          </div>
+          <p style="margin-top:6px; color:var(--muted)">Complète le PDF puis tente le quiz. Les badges se débloquent automatiquement.</p>
+          <div class="progress" aria-label="Progression du cours"><span style="width:42%"></span></div>
+          <p class="hint">2/5 chapitres terminés</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz (mock) -->
+  <section id="quiz">
+    <div class="container">
+      <div class="section-title">
+        <h3>Quiz — Adressage IP</h3>
+        <p>Exemple d’interface de quiz (états visuels CSS seulement).</p>
+      </div>
+
+      <div class="panel">
+        <div class="quiz-q">
+          <strong>1) Combien d’adresses hébergeables dans un /24 ?</strong>
+          <div class="choices" role="group" aria-label="Réponses question 1">
+            <div class="choice">
+              <input type="radio" name="q1" id="q1a" />
+              <label for="q1a">254</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" id="q1b" />
+              <label for="q1b">256</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q1" id="q1c" />
+              <label for="q1c">255</label>
+            </div>
+          </div>
+          <p class="hint">Astuce : 2 adresses sont réservées (réseau + broadcast).</p>
+        </div>
+
+        <div class="quiz-q">
+          <strong>2) Quel masque pour 16 hôtes ?</strong>
+          <div class="choices" role="group" aria-label="Réponses question 2">
+            <div class="choice">
+              <input type="radio" name="q2" id="q2a" />
+              <label for="q2a">/28</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" id="q2b" />
+              <label for="q2b">/27</label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="q2" id="q2c" />
+              <label for="q2c">/29</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 16px;">
+          <button class="btn btn-primary" aria-label="Valider le quiz">Valider</button>
+          <button class="btn btn-ghost" aria-label="Recommencer">Recommencer</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil (mock) -->
+  <section id="profil">
+    <div class="container">
+      <div class="section-title">
+        <h3>Profil apprenant</h3>
+        <p>Historique, badges, stats — version légère.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card" style="grid-column: span 7;">
+          <header>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 5a3 3 0 1 1-3 3 3 3 0 0 1 3-3Zm0 13a8 8 0 0 1-6.65-3.47 6 6 0 0 1 13.3 0A8 8 0 0 1 12 20Z"/></svg>
+            <h4>Bienvenue, Alex</h4>
+          </header>
+          <p>Tu progresses bien. Essaie le quiz « Cybersécurité » pour décrocher un nouveau badge.</p>
+          <div class="badges" style="margin-top:10px;">
+            <span class="badge">🏅 Débutant</span>
+            <span class="badge">🎯 1er quiz réussi</span>
+            <span class="badge">⚡ Régularité 7 jours</span>
+          </div>
+        </div>
+
+        <div class="card" style="grid-column: span 5;">
+          <header>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3Zm0 4h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            <h4>Statistiques rapides</h4>
+          </header>
+          <p>Quiz joués : 12 • Score moyen : 78% • PDFs lus : 6</p>
+          <div class="progress" aria-label="Progression globale"><span style="width:78%"></span></div>
+          <p class="hint">Objectif Semaine : 3 quiz — il en reste 1 🔥</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2025 Academia — by MayTech solutions </div>
+  </footer>
+
+  <!--gestion des clique avec JS-->
+  <script>
+    // JavaScript
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
